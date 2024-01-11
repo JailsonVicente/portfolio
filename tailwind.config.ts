@@ -9,9 +9,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        title: "GotikaBlack",
-      },
+      
     },
   },
   plugins: [],
