@@ -22,17 +22,18 @@ export default function Container() {
   }, []);
 
   return (
-    <main className={`
+    <div className={`
         h-screen   items-center justify-center
         bg-slate-700  
     `}>
-
+        <title>Jailson Vicente</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       <div className='inline-flex'>
         <Home />
         <Work />
         <Section3 />
       </div>
 
-    </main>
+    </div>
   )
 }
