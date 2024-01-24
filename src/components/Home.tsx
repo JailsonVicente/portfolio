@@ -1,4 +1,5 @@
 import { Bigelow_Rules } from "next/font/google"
+import Image from "next/image"
 
 const bigelowRules = Bigelow_Rules({
     weight: ['400'],
@@ -18,31 +19,43 @@ export default function Home() {
             <div className="bg-gradient-to-b from-neutral-700 to-neutral-300 shadow text-white h-full w-[30vw]">
                 Iframe Video Iframe Video Iframe Video Iframe Video
             </div>
-            <div className="bg-white h-full w-full flex justify-center">
-                <div className="bg-[#F0EBDF] w-[65vw] h-[75vh] mt-[7vh] ">
-                    <span>
-                        Jailson Vicente
-                    </span>
+            <div className={`
+                bg-white h-full w-full px-12
+                flex flex-col items-center 
+            `}>
+                <div  className={`
+                    ${bigelowRules.className} text-xl
+                    w-full h-8 flex justify-between items-center
+                `}>
+                    <span>2024</span>
+                    <span>Web Developer</span>
+                </div>
+                <div className="bg-[#F0EBDF] w-full p-10 ">
+                    <div>
+                        <Image
+                            src={'/assets/jailson-vicente.png'}
+                            width={500}
+                            height={76}
+                            alt="Jailson Vicente Logo Image"
+                            className="mb-4"
+                        />
+                    </div>
                     <div className={`
-                        flex  flex-col gap-[40px]
-                        text-left max-w-[900px] text-[40px]
-                        leading-[48px] text-[#400]
-                        
+                        flex  flex-col gap-4
+                        text-left text-xl max-w-[90%]
                     `}>
-                        <h1 className={`
-                            
-                        `}>
+                        <h1>
                             Hello! I'm Jailson Vicente, a web developer committed to transforming creative ideas into impactful digital solutions.
                         </h1>
                         <h1>
                             If you're in search of a professional to elevate your team or a reliable partner for your web projects, you're in the right place.
                         </h1>
-                        <h1 className="border-[#400] text-[48px] border-b-2 w-fit font-bold">
+                        <h1 className={`
+                            underline underline-offset-8 text-3xl
+                            w-fit font-bold text-[#9B0303]
+                        `}>
                             Let's bring your vision to life!
                         </h1>
-                        <h4 className={`
-                            ${bigelowRules.className} text-black
-                        `}>Jailson Vicente Web Developer</h4>
                     </div>
                 </div>
             </div>
