@@ -1,4 +1,5 @@
 import { BIZ_UDMincho } from "next/font/google";
+import WorkCard1 from "./work/WorkCard1";
 
 
 export default function Work(){
@@ -7,11 +8,7 @@ export default function Work(){
             h-screen w-screen flex items-center justify-center bg-white py-8
         `}>
             <div className="bg-[#F0EBDF] w-full h-full">
-                <div>
-                    <h1 className={`
-                    
-                    `}>teste teste teste teste teste teste teste</h1>
-                </div>
+                    <WorkCard1 />
             </div>
         </div>
     )
