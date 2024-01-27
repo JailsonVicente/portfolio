@@ -1,6 +1,6 @@
 
 import Home from '@/components/Home';
-import Section3 from '@/components/Section3'
+import Section3 from '@/components/About'
 import Work from '@/components/Work';
 import { BIZ_UDMincho } from 'next/font/google';
 import { useEffect } from 'react'
