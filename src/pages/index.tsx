@@ -4,6 +4,8 @@ import Section3 from '@/components/About'
 import Work from '@/components/Work';
 import { BIZ_UDMincho } from 'next/font/google';
 import { useEffect } from 'react'
+import Head from 'next/head';
+
 
 const bizUDMincho = BIZ_UDMincho({
   weight: ['400', '700'],
@@ -12,9 +14,11 @@ const bizUDMincho = BIZ_UDMincho({
 })
 
 
+
+
 export default function Container() {
-;
-  
+
+
   useEffect(() => {
 
     const handleWheel = (event: any) => {
@@ -38,8 +42,11 @@ export default function Container() {
         h-screen items-center justify-center
         bg-slate-700 
     `}>
+      <Head>
         <title>Jailson Vicente</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Jailson Vicente Portifolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
       <div className={`
         inline-flex text-[#440000]
         ${bizUDMincho.className}
