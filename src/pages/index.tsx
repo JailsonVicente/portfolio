@@ -52,8 +52,8 @@ export default function Container() {
         ${bizUDMincho.className}
       `}>
         <Home />
-        <Work />
-        <Section3 />
+        {/* <Work />
+        <Section3 /> */}
       </div>
     </div>
   )
