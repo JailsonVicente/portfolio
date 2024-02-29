@@ -4,8 +4,12 @@ export default function AboutDescription() {
             w-3/5 h-full bg-[#F0EBDF]
             flex flex-col justify-between text-[#9b0303]
         `}>
-            <div className="border-b-2 border-black opacity-10 h-[5vh]"></div>
-            <div className="flex flex-col gap-5 text-left items-center h-full py-[5vh] px-[2.5vh]">
+            {/* <div className="border-b-2 border-black opacity-10 h-[5vh]"></div> */}
+            <div className={`
+                flex flex-col gap-5  items-center 
+                h-full py-[5vh] px-[2.5vh]
+                text-left 
+            `}>
                 <p className={`
                 text-base 
             `}>
@@ -29,7 +33,7 @@ export default function AboutDescription() {
                 <button className="h-[40px] w-[50%] bg-black text-white rounded-md shadow-lg active:-translate-y-2">Download CV</button>
             </div>
 
-            <div className="border-t-2 border-black opacity-10 h-[5vh] "></div>
+            {/* <div className="border-t-2 border-black opacity-10 h-[5vh] "></div> */}
         </div>
     )
 }

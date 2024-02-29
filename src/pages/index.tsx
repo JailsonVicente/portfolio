@@ -17,14 +17,16 @@ const bizUDMincho = BIZ_UDMincho({
 
 
 export default function Container() {
-
-
   useEffect(() => {
 
     const handleWheel = (event: any) => {
       if (event.deltaY !== 0) {
-        document.documentElement.scrollLeft += event.deltaY;
+        document.documentElement.scrollBy({
+          top: 0,
+          left: event.deltaY,
+        });
       }
+
 
     }
 
@@ -38,9 +40,8 @@ export default function Container() {
   }, []);
 
   return (
-    <div className={`
-        h-screen items-center justify-center
-        bg-slate-700 
+    <main className={`
+        h-screen flex items-center 
     `}>
       <Head>
         <title>Jailson Vicente</title>
@@ -48,13 +49,15 @@ export default function Container() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div className={`
-        inline-flex text-[#440000]
+        text-[#440000]  w-[400vw] flex h-full 
         ${bizUDMincho.className}
-      `}>
-        <Home />
-        {/* <Work />
-        <Section3 /> */}
+      `} id='container'>
+
+
+        <Home /> 
+        <Work />
+        <Section3 />
       </div>
-    </div>
+    </main>
   )
 }

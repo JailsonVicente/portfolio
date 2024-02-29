@@ -5,6 +5,7 @@ export default function AboutPanel() {
         <div className={`
             w-[15vw] h-full gap-3 bg-white
             flex flex-col items-center justify-center
+            shadow-2xl z-30
         `}>
             <button className="items-center flex flex-col gap-2 p-2 shadow-sm active:translate-y-2 hover:shadow-lg hover:-translate-y-2 w-full h-1/3">
                 <Image

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutVideo(){
     return(
         <div className={`
-            w-1/4 h-full bg-white pt-[10vh] pb-[15vh] px-[8vh]
+            w-1/4 h-full bg-white pt-[10vh] pb-[15vh] px-[8vh] shadow-2xl z-30
         `}>
             <div className="w-full h-full ">
                 <Image 

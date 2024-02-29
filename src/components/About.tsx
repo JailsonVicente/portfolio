@@ -5,7 +5,7 @@ import AboutVideo from "./about/AboutVideo";
 export default function About(){
     return(
         <section className={`
-            h-screen w-screen flex items-center justify-center bg-green-500
+            h-full w-screen flex items-center justify-center bg-green-500
         `}>
             <AboutVideo />
             <AboutDescription />

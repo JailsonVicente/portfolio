@@ -14,11 +14,11 @@ const bigelowRules = Bigelow_Rules({
 export default function Home() {
     return (
         <div className={`
-                h-full w-[200vw] flex  items-center justify-center 
+                h-full w-[200vw] flex shadow-2xl z-30
         `}>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-            <div className="bg-gradient-to-b from-neutral-700 to-neutral-300 shadow text-white h-screen w-screen">
+            <div className="bg-gradient-to-b from-neutral-700 to-neutral-300 shadow text-white h-full w-screen">
                 Iframe Video Iframe Video Iframe Video Iframe Video
             </div>
             <div className={`
@@ -27,13 +27,13 @@ export default function Home() {
             `}>
                 <div  className={`
                     ${bigelowRules.className} text-xl
-                    w-full h-8 flex justify-between items-center
+                    w-full  flex justify-between items-center
                 `}>
                     <span>2024</span>
                     <span>Web Developer</span>
                 </div>
                 <div className="bg-[#F0EBDF] h-full  ">
-                    {/* <div>
+                    <div>
                         <Image
                             src={'/assets/jailson-vicente.png'}
                             width={500}
@@ -41,7 +41,7 @@ export default function Home() {
                             alt="Jailson Vicente Logo Image"
                             className="mb-4"
                         />
-                    </div> */}
+                    </div>
                     <div className={`
                         flex  flex-col gap-4
                         text-left text-xl max-w-[90%]
