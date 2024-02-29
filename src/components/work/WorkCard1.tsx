@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function WorkCard1() {
     return (
         <div className={`
-            w-full h-full flex
+            w-full h-full flex flex-row-reverse
         `}>
             <section className={`
                 w-1/2 h-full flex items-center flex-col
