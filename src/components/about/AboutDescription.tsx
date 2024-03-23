@@ -1,7 +1,8 @@
 export default function AboutDescription() {
     return (
         <div className={`
-            w-3/5 h-full bg-[#F0EBDF]
+            w-screen
+            md:w-3/5 h-full bg-[#F0EBDF]
             flex flex-col justify-between text-[#9b0303]
         `}>
             {/* <div className="border-b-2 border-black opacity-10 h-[5vh]"></div> */}

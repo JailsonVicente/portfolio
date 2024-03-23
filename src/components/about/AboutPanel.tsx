@@ -3,7 +3,8 @@ import Image from "next/image";
 export default function AboutPanel() {
     return (
         <div className={`
-            w-[15vw] h-full gap-3 bg-white
+            w-screen
+            md:w-[15vw] h-full gap-3 bg-white
             flex flex-col items-center justify-center
             shadow-2xl z-30
         `}>

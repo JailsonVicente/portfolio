@@ -9,6 +9,7 @@ export default function Work(){
         `}>
             <div className="bg-[#F0EBDF] w-full h-full">
                     <WorkCard1 />
+                    
             </div>
         </div>
     )

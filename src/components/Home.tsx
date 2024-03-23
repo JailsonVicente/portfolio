@@ -14,15 +14,18 @@ const bigelowRules = Bigelow_Rules({
 export default function Home() {
     return (
         <div className={`
-                h-full w-[200vw] flex shadow-2xl z-30
+            w-screen flex flex-col 
+            md:w-[200vw] md:flex shadow-2xl z-30
         `}>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-            <div className="bg-gradient-to-b from-neutral-700 to-neutral-300 shadow text-white h-full w-screen">
+            <section className={`
+                text-white h-screen w-screen
+                bg-gradient-to-b from-neutral-700 to-neutral-300 shadow
+            `}>
                 Iframe Video Iframe Video Iframe Video Iframe Video
-            </div>
-            <div className={`
-                bg-white h-screen w-screen 
+            </section>
+
+            <section className={`
+                bg-white h-screen w-screen a
                 flex flex-col items-center 
             `}>
                 <div  className={`
@@ -60,7 +63,7 @@ export default function Home() {
                         </h1>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     )
 }
