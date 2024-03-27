@@ -14,7 +14,7 @@ const bigelowRules = Bigelow_Rules({
 export default function Home() {
     return (
         <div className={`
-            w-screen flex flex-col 
+            w-screen flex flex-col
             md:w-[200vw] md:flex shadow-2xl z-30
         `}>
             <section className={`
@@ -25,29 +25,32 @@ export default function Home() {
             </section>
 
             <section className={`
-                bg-white h-screen w-screen a
+                bg-white h-screen w-screen px-2
                 flex flex-col items-center 
             `}>
                 <div  className={`
                     ${bigelowRules.className} text-xl
                     w-full  flex justify-between items-center
+                    px-2
                 `}>
                     <span>2024</span>
                     <span>Web Developer</span>
                 </div>
-                <div className="bg-[#F0EBDF] h-full  ">
-                    <div>
+                <div className="bg-[#F0EBDF] shadow-2xl pb-4">
+                    <div className={`
+                        w-[300px] md:[500px] my-2
+                    `}>
                         <Image
                             src={'/assets/jailson-vicente.png'}
                             width={500}
                             height={76}
                             alt="Jailson Vicente Logo Image"
-                            className="mb-4"
+                            
                         />
                     </div>
                     <div className={`
-                        flex  flex-col gap-4
-                        text-left text-xl max-w-[90%]
+                        flex  flex-col gap-4 text-xl
+                        text-left max-w-[90%] p-2
                     `}>
                         <h1>
                             Hello! I'm Jailson Vicente, a web developer committed to transforming creative ideas into impactful digital solutions.

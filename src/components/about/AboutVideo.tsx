@@ -12,6 +12,7 @@ export default function AboutVideo(){
                     width={332}
                     height={590}
                     alt="Skateboard video"
+                    
                 />
             </div>
         </div>
