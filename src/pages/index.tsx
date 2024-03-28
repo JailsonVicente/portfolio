@@ -62,7 +62,7 @@ export default function Container() {
 
   return (
     <main className={`
-      md:h-screen flex items-center
+        flex items-center
     `}>
       <Head>
         <title>Jailson Vicente</title>
@@ -73,7 +73,7 @@ export default function Container() {
         className={`
           text-[#440000] flex flex-col
           w-screen
-          md:flex md:w-[400vw]  md:h-full 
+          md:flex-row
           ${bizUDMincho.className}
         `}
         id="container"

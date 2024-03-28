@@ -3,10 +3,12 @@ import Image from "next/image";
 export default function WorkCard1() {
     return (
         <div className={`
-            w-full h-full flex flex-row-reverse
+            w-full h-full flex flex-col md:flex-row-reverse
+            items-center
         `}>
             <section className={`
-                w-1/2 h-full flex items-center flex-col
+                w-full
+                md:w-1/2 h-full flex items-center flex-col
             `}>
                 <div className="w-4/5">
                     <Image
@@ -23,11 +25,12 @@ export default function WorkCard1() {
 
             </section>
             <section className={`
-                w-1/2 h-full
+                w-full
+                md:w-1/2 h-full
             `}>
                 <div className="p-2 flex  flex-col gap-4">
                     <h1 className="text-2xl leading-7 text-[#9B0303]">This is a contact page for my sister company,they have an automotive center.</h1>
-                    <p className="text-xl leading-6">I focused on simple features such as buttons that redirect directly to the company's WhatsApp, links to social networks, and integration with Google Maps. <u>In the project I used:</u></p>
+                    <p className="text-xl leading-6">I focused on simple features such as buttons that redirect directly to the company's WhatsApp, links to social media, and integration with Google Maps. <u>In the project I used:</u></p>
                     <p className="text-lg leading-5">
                         -Figma to develop the interface<br></br>
                         -HTML, CSS and JavaScript<br></br>

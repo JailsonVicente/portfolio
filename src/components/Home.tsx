@@ -15,7 +15,7 @@ export default function Home() {
     return (
         <div className={`
             w-screen flex flex-col
-            md:w-[200vw] md:flex shadow-2xl z-30
+            md:w-[200vw] md:flex-row shadow-2xl z-30
         `}>
             <section className={`
                 text-white h-screen w-screen

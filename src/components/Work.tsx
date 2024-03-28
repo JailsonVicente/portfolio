@@ -5,9 +5,9 @@ import WorkCard1 from "./work/WorkCard1";
 export default function Work(){
     return(
         <div className={`
-            h-full w-screen flex items-center justify-center bg-white py-8
+            md:h-screen h-full w-screen flex items-center justify-center bg-white md:py-8
         `}>
-            <div className="bg-[#F0EBDF] w-full h-full">
+            <div className="bg-[#F0EBDF] w-full h-full py-4">
                     <WorkCard1 />
                     
             </div>
