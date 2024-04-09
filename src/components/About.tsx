@@ -7,7 +7,7 @@ export default function About(){
         <section className={`
             flex flex-col w-screen bg-green-500
             items-center justify-center 
-            md:flex
+            md:flex-row md:h-screen
         `}>
             <AboutVideo />
             <AboutDescription />

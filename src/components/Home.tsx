@@ -18,25 +18,18 @@ export default function Home() {
             md:w-[200vw] md:flex-row shadow-2xl z-30
         `}>
             <section className={`
-                text-white h-screen w-screen
-                bg-gradient-to-b from-neutral-700 to-neutral-300 shadow
-            `}>
-                Iframe Video Iframe Video Iframe Video Iframe Video
-            </section>
-
-            <section className={`
-                bg-white h-screen w-screen px-2
+                bg-white h-screen w-screen px-4w
                 flex flex-col items-center 
             `}>
-                <div  className={`
+                <div className={`
                     ${bigelowRules.className} text-xl
                     w-full  flex justify-between items-center
-                    px-2
+                    px-2 
                 `}>
                     <span>2024</span>
                     <span>Web Developer</span>
                 </div>
-                <div className="bg-[#F0EBDF] shadow-2xl pb-4">
+                <div className="bg-[#F0EBDF] shadow-2xl pb-4 md:h-[80vh] md:mx-10">
                     <div className={`
                         w-[300px] md:[500px] my-2
                     `}>
@@ -45,7 +38,7 @@ export default function Home() {
                             width={500}
                             height={76}
                             alt="Jailson Vicente Logo Image"
-                            
+
                         />
                     </div>
                     <div className={`
@@ -66,7 +59,16 @@ export default function Home() {
                         </h1>
                     </div>
                 </div>
+                <div className="hidden md:block md:absolute md:right-0 md:bottom-0 md:mx-2">
+                    <Image
+                        height={353}
+                        width={555}
+                        src={'/assets/binaryVetor.png'}
+                        alt="binary vetor"
+                    />
+                </div>
             </section>
+
         </div>
     )
 }
