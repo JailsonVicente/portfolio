@@ -28,7 +28,7 @@ export default function WorkCard1() {
                 md:w-1/2 h-full
             `}>
                 <div className="p-2 flex  flex-col gap-4">
-                    <h1 className="text-2xl leading-7 text-[#9B0303]">This is a contact page for my sister company,they have an automotive center.</h1>
+                    <h1 className="text-2xl leading-7 text-[#9B0303]">This is a contact page for an automotive center.</h1>
                     <p className="text-xl leading-6">I focused on simple features such as buttons that redirect directly to the company's WhatsApp, links to social mediaq, and integration with Google Maps. <u>In the project I used:</u></p>
                     <p className="text-lg leading-5">
                         -Figma to develop the interface<br></br>
@@ -36,7 +36,7 @@ export default function WorkCard1() {
                         -Pexels website to download images<br></br>
                         -Photoshop for editing background images and recreating the company logo.</p>
                     <h2 className="text-xl leading-6 text-[#9B0303]">It's not perfect, but as it's the first project I developed alone I'm very happy! The first of many.</h2>
-                    <div className="w-full flex justify-center gap-2">
+                    <div className="w-full flex justify-center gap-2 text-white">
                         <button className="w-2/5 h-12 bg-red-800 rounded-full">Back Project</button>
                         <button className="w-2/5 h-12 bg-red-800 rounded-full">Next Project</button>
                     </div>

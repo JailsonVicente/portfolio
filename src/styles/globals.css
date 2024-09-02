@@ -11,6 +11,10 @@
 }
 
 
+button:active{
+  translate: 2px -10px;
+}
+
 ::-webkit-scrollbar {
   width: 10px; /* Adjust the width as needed */
   height: 5px;
